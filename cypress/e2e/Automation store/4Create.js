@@ -55,11 +55,11 @@ describe('Task', () => {
         cy.url().should('include', 'driver');
         cy.screenshot();
 
-        //cy.get('[href="Actions/index.html"]').invoke('removeAttr', "target").click();
+        cy.get('[href="Actions/index.html"]').invoke('removeAttr', "target").click();
 
         cy.get('[class="navbar-brand"]').should('contain.text', 'Actions');
 
-        cy.get('["id=dragable"]').trigger('mousedown').trigger('mousemove', 366, 236).trigger('mouseup');
+         
   // .trigger('mousedown', { which: 1 })
   // .trigger('mousemove', { clientX: 100, clientY: 100 })
   // .trigger('mouseup');
