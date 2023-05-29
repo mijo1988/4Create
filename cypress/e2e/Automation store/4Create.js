@@ -31,10 +31,11 @@ describe('Task', () => {
 
         cy.contains('Place Order').click();
 
+        //Test examples
         //cy.get('[class="wrapperTwo"]').should('contain.text', 'Choose Country');
         //cy.get('[value="Afghanistan"]').click({force: true}); 
 
-        //cy.get('class="wrapperTwo" > .div').first().click();
+        //cy.get('class="wrapperTwo" > .div').first().click(); 
         //cy.get('[class="wrapperTwo"]').select('Afghanistan');
         //cy.get('[class="wrapperTwo"]').find('div').first();
         //cy.wait(20000);
